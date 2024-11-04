@@ -29,8 +29,8 @@ jobs:
 
       - name: Build test and analyze with SonarCloud
         run: mvn -B verify sonar:sonar
-          -Dsonar.projectKey=VanBommel9_devops-livecoding
-          -Dsonar.organization=vanbommel9
+          -Dsonar.projectKey=Dorian1234567_devops-livecoding
+          -Dsonar.organization=dorian1234567
           -Dsonar.host.url=https://sonarcloud.io
           -Dsonar.login=${{ secrets.SONAR_TOKEN }}
           --file ./simple-api/pom.xml
